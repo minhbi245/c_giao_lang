@@ -1,0 +1,26 @@
+1. Hàm là 1 nhóm lệnh được đặt tên, làm 1 việc gì đó có ý nghĩa - chia để trị
+
+2. Hàm có 4 loại dựa trên đầu ra - đầu vào - y = f(x) = x^2
+
+3. Dùng hàm, tức là ta muốn CPU xử lý/làm gì đó, thì phải GỌI TÊN EM RA, VIẾT TÊN HÀM RA
+(copy & paste cái đoạn lệnh/code trong hàm) vào cái chỗ gọi hàm/muốn chạy hàm!!! CALL/INVOKE!
+
+4. Tùy loại hàm thì cách gọi em khác nhau, dùng em thế nào sẽ khác nhau chút chút, 4 hàm chỉ gọi tên em thì okie,
+các hàm bắt đầu chạy như thiết kê
+NHƯNG...
+    - Hàm void() thì chỉ được gọi em, f() xem em xử lí thế nào qua việc xem em PRINTF(KQ)
+    - Hàm có trả về giá trị, gọi em cũng okie, nhưng coi chưng không thấy gì cả, dù em có làm int f() {...}     f() // Coi chừng ko thấy kết quả gì dù có làm
+    - Hàm có trả về giá trị, gọi em và gán/gả em cho biến khác, vì em là giá trị
+        đã biết em xử lí thế nào int result = f(), PRINTF(RESULT)
+        dùng thêm định luật bắc cầu về giá trị thì dùng em luôn vì em là giá trị, dùng em luôn vào trong hàm khác, lệnh khác, biểu thức khác -> RE-USE -> PRINTF(F())
+
+* GHI CHÚ QUAN TRỌNG VỀ RETURN
+    - NẾU CPU chạm được lệnh return, thì NÓ SẼ KẾT THÚC HÀM NGAY VÀ LUÔN, KO QUAN TÂM CÁC LỆNH SAU NÓ...
+    - Một hàm được quyền có bao nhiêu lệnh return???
+        + Có 2 style thiết kế hàm có trả về giá trị:
+            -> Hàm chỉ có duy nhất 1 lệnh return đặt ở cuối hàm. Để kiểm soát value đầu ra cho nó nhât quán => Nhà có 1 cửa thoát (Chuẩn mực)
+            -> (Thực dụng) - hàm có NHIỀU LỆNH RETURN, NHIỀU CỬA THOÁT!!!
+                Chỗ nào đã xác định được value của hàm, thì dừng luôn, ko cần chờ đến cuối mới RETURN
+                CÓ ĐƯỢC VALUE TRONG BẤT KÌ TÌNH HUỐNG NÀO, THÌ DỪNG!!! VÌ HÀM CẦN VALUE, CÓ THÌ DỪNG.
+    - RETURN MẠNH HƠN BREAK, BREAK CHỈ THOÁT LẶP
+                             RETURN THOÁT HÀM, DÙ CPU ĐANG Ở TRONG VÒNG LẶP

@@ -1,0 +1,20 @@
+THẾ GIỚI CÁC LỆNH LẶP - ÉP CPU VÒNG VÒNG, XÀ QUẦN, LOOP
+    - FOR
+    - DO - WHILE
+    - WHILE
+CẢ 3 TƯƠNG ĐƯƠNG NHAU, ÉP CPU VÒNG VÒNG 1 SỐ LẦN, HOẶC VÔ TẬN
+
+    * VÒNG LẶP FOR - BẠN MUỐN CPU LẬP BAO NHIÊU LẦN, CHỈ CHO NÓ...
+
+for( biến chặn đầu; kiểm tra chặn đuôi, bước nhảy)
+{
+    những lệnh cần lặp ở đây;
+}
+
+for( biến chặn đầu; kiểm tra chặn đuôi, bước nhảy)
+    1 lệnh lặp lại nằm trong đây, ko cần cặp ngoặc nhọn
+
+for( biến chặn đầu; kiểm tra chặn đuôi, bước nhảy); // TOANG CON MẸ NÓ RỒI
+{                                                   // CÂU CỤT NHƯ KIỂU IF, SAI!!!
+    những lệnh cần lặp ở đây;
+}

@@ -1,0 +1,25 @@
+BÀI TẬP VỀ HÀM
+
+1. TÍNH TỔNG CỦA CÁC GIAI THỪA, KHÔNG PHẢI TÍNH 5! GIAI THỪA MỘT MÌNH ÊN
+n! = 1.2.3.4...n
+
+Độ phức tạp:
+
+    - Tính n! giai thừa!!! -> thuật toán ốc bươu nhồi thịt -> 1 vòng for để nhồi n! ~~~ nhồi 1 con ốc lẻ
+
+    - Bài này thì lại có nhiều giai thừa cộng nhau -> 1 vòng nhồi các giai thừa nữa!!!
+        tổng: cần có 1 rỗ luộc ốc luôn
+                nhồi liên tục vào nồi các con ốc
+                    mỗi con ốc nhồi 1 riêng lẽ nữa
+
+        2 VÒNG LẶP LÔNG NHAU NẾU AI CHƯA CỨNG TAY VIẾT CODE
+                FOR (.... N ĐỂ CỘNG DỒN CÁC GIAI THỪA)  // Có giai thừa chưa, đưa tao
+                    FOR(... I ĐỂ TÍNH I!)               // Mỗi giai thừa i = 5! thì lại là nhồi
+    
+    => SOLUTIONS: CHIA ĐỂ TRỊ - CÓ SỰ LẶP LẠI CỦA CÁC X! N!, SAO TA KO LÀM 1 CÁI HÀM CHỈ ĐỂ TÍNH X!
+                SAU ĐÓ TA RÁP HÀM NÀY VÀO TRONG CÁC PHÉP CỘNG DÀI DÀI
+                f(1) + f(2) + f(3) + f(4) + ... + f(n)
+
+2. HÃY IN RA CÁC SỐ NGUYÊN TỐ TRONG ĐOẠN TỪ 1...1000
+
+3. HÃY IN RA 1000 SỐ NGUYÊN TỐ ĐẦU TIÊN TÍNH TỪ 2...
